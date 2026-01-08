@@ -1,0 +1,20 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Main request successfull
+INFO:werkzeug:127.0.0.1 - - [07/Jan/2026 15:06:14] "GET / HTTP/1.1" 200 -
+INFO:app:Main request successfull
+INFO:werkzeug:127.0.0.1 - - [07/Jan/2026 15:06:15] "GET / HTTP/1.1" 200 -
+INFO:app:Main request successfull
+INFO:werkzeug:127.0.0.1 - - [07/Jan/2026 15:06:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Main request successfull
+INFO:werkzeug:127.0.0.1 - - [07/Jan/2026 15:08:11] "GET / HTTP/1.1" 200 -
+INFO:app:Grabbing metrics of the application...
+INFO:app:Metrics extracted succesfully!
+INFO:werkzeug:127.0.0.1 - - [07/Jan/2026 15:08:21] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Grabbing status of the application...
+INFO:app:Status extracted succesfully!
+INFO:werkzeug:127.0.0.1 - - [07/Jan/2026 15:08:31] "GET /status HTTP/1.1" 200 -
