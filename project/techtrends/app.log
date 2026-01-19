@@ -1,0 +1,99 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://62.242.223.15:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://62.242.223.15:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Grabbing metrics of the application...
+INFO:app:Metrics extracted succesfully!
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:40:09] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:40:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:40:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://62.242.223.15:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:40:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:40:25] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article '<sqlite3.Row object at 0x7cb42f560640>' retrieved!
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:40:26] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:40:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://62.242.223.15:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Article '<sqlite3.Row object at 0x7ae1a3c682b0>' retrieved!
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:43:09] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:43:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://62.242.223.15:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Article '1' retrieved!
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:43:34] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:43:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://62.242.223.15:3111
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Article 'KubeCon + CloudNativeCon 2021' retrieved!
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:44:36] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:44:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article 'CNCF Cloud Native Interactive Landscape' retrieved!
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:44:51] "GET /4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:44:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article 'Kubernetes Certification' retrieved!
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:44:53] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:44:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /7 [GET]
+Traceback (most recent call last):
+  File "/home/anddr/Repos/nd064_course_1/.myvenv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anddr/Repos/nd064_course_1/.myvenv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anddr/Repos/nd064_course_1/.myvenv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anddr/Repos/nd064_course_1/.myvenv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anddr/Repos/devops_automation_course_1/project/techtrends/app.py", line 65, in post
+    app.logger.info(f"Article '{post['title']}' retrieved!")
+                                ~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [19/Jan/2026 10:44:57] "[35m[1mGET /7 HTTP/1.1[0m" 500 -
+2026-01-19 10:47:52,230 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://62.242.223.15:3111
+2026-01-19 10:47:52,230 INFO [33mPress CTRL+C to quit[0m
+2026-01-19 10:47:59,988 INFO Article doesn't exist, please try again!
+2026-01-19 10:47:59,993 INFO 127.0.0.1 - - [19/Jan/2026 10:47:59] "[33mGET /7 HTTP/1.1[0m" 404 -
+2026-01-19 10:48:00,005 INFO 127.0.0.1 - - [19/Jan/2026 10:48:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-19 10:48:01,565 INFO Article '2020 CNCF Annual Report' retrieved!
+2026-01-19 10:48:01,567 INFO 127.0.0.1 - - [19/Jan/2026 10:48:01] "GET /1 HTTP/1.1" 200 -
+2026-01-19 10:48:01,583 INFO 127.0.0.1 - - [19/Jan/2026 10:48:01] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-19 10:50:48,438 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://62.242.223.15:3111
+2026-01-19 10:50:48,438 INFO [33mPress CTRL+C to quit[0m
+2026-01-19 10:50:50,440 INFO Article '2020 CNCF Annual Report' retrieved!
+2026-01-19 10:50:50,444 INFO 127.0.0.1 - - [19/Jan/2026 10:50:50] "GET /1 HTTP/1.1" 200 -
+2026-01-19 10:50:50,455 INFO 127.0.0.1 - - [19/Jan/2026 10:50:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-19 10:50:52,199 INFO 127.0.0.1 - - [19/Jan/2026 10:50:52] "GET /create HTTP/1.1" 200 -
+2026-01-19 10:50:52,209 INFO 127.0.0.1 - - [19/Jan/2026 10:50:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-19 10:50:59,688 INFO New post created called: Test post!
+2026-01-19 10:50:59,688 INFO 127.0.0.1 - - [19/Jan/2026 10:50:59] "[32mPOST /create HTTP/1.1[0m" 302 -
+2026-01-19 10:50:59,696 INFO 127.0.0.1 - - [19/Jan/2026 10:50:59] "GET / HTTP/1.1" 200 -
+2026-01-19 10:50:59,715 INFO 127.0.0.1 - - [19/Jan/2026 10:50:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
