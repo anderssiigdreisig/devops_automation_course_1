@@ -29,11 +29,11 @@ spec:
             protocol: TCP
         resources:
           requests:
-            memory: {{ .Values.requests.memory }}
-            cpu: {{ .Values.requests.memory }}
+            memory: {{ .Values.resources.requests.memory }}
+            cpu: {{ .Values.resources.requests.cpu }}
           limits:
-            memory: {{ .Values.limits.memory }}
-            cpu: {{ .Values.limits.memory }}
+            memory: {{ .Values.resources.limits.memory }}
+            cpu: {{ .Values.resources.limits.cpu }}
         livenessProbe:
            httpGet:
              path: {{ .Values.livenessProbe.path }}
