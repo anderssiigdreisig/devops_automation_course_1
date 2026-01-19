@@ -14,7 +14,6 @@ from flask import (
 
 # Stream logs to a file, and set the default log level to DEBUG
 logging.basicConfig(
-    filename="app.log",
     level=logging.DEBUG,
     format="%(asctime)s %(levelname)s %(message)s",
 )
