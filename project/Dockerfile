@@ -2,8 +2,12 @@
 FROM python:3.8
 LABEL maintainer="Anders Dreisig"
 
-COPY . /app
+# Set working directory to  app/techtrends
 WORKDIR /app/techtrends
+
+# Copy all contents of the `projects/techtrends` directory to the container's `/app/techtrends`
+COPY techtrends/ /app/techtrends/
+
 RUN pip install -r requirements.txt
 
 EXPOSE 3111
