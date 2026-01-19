@@ -46,4 +46,3 @@ spec:
              port: 3111
            initialDelaySeconds: 5
            periodSeconds: 5
-{{ toYaml .Values.resources | indent 12 }}
